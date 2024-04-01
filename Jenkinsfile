@@ -10,3 +10,4 @@ pipeline {
     }
 }
 /*Tôi dự định sẽ bổ xung thêm state tại đây*/
+/*Toi vừa bổ xung commit*/
