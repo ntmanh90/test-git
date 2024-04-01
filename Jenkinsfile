@@ -1,12 +1,21 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'maven:3.9.6-eclipse-temurin-17-alpine' } }
+    agent any
     stages {
-        stage('build') {
+        stage('Git clone') {
             steps {
-                sh 'mvn --version'
+                git credentialsId: 'ntmanh90-github', url: 'https://github.com/ntmanh90/test-git'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Testing completed"
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "Build completed"
             }
         }
     }
 }
-/*Tôi dự định sẽ bổ xung thêm state tại đây*/
