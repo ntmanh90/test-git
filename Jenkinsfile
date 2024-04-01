@@ -9,3 +9,4 @@ pipeline {
         }
     }
 }
+/*Tôi dự định sẽ bổ xung thêm state tại đây*/
